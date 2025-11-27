@@ -3,15 +3,33 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Test GitHub Pages</title>
+<title>Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-<main>
-<h1 id="title">GitHub Pages Test</h1>
-<p id="status">Status: ready</p>
-<button id="btn">Click me</button>
+<nav class="menu-wrap" aria-label="Site navigation">
+	<button id="menu" class="menu" aria-label="Open menu" aria-expanded="false">
+		<span></span>
+		<span></span>
+		<span></span>
+	</button>
+	<ul class="dropdown" role="menu" aria-hidden="true">
+		<li role="none"><a role="menuitem" href="index.html">Home</a></li>
+		<li role="none"><a role="menuitem" href="about.html">About</a></li>
+	</ul>
+</nav>
+
+<main class="hero">
+	<div class="card">
+		<h1 id="title">Hello, Welcome to Benji's Website</h1>
+		<p class="lead">I develop websites, practice C + Python, and practice/setup secure personal Linux and Windows systems.</p>
+		<div class="actions">
+			<a class="btn" href="about.html">About</a>
+		</div>
+	</div>
 </main>
+
 <script src="assets/js/script.js" defer></script>
 </body>
 </html>
