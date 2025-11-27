@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name — Portfolio</title>
+
+  <!-- Link to CSS in assets/css/styles.css -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!--
+    Layout:
+    - A slim fixed sidebar on the left that expands (fades & slides)
+      when hovered or focused (keyboard accessible).
+    - A main content area (simple hero + welcome message).
+  -->
+
+  <!-- Sidebar -->
+  <nav class="sidebar" aria-label="Primary">
+    <!-- The visible icon/handle when collapsed -->
+    <button class="sidebar-handle" aria-expanded="false" aria-controls="sidebar-menu">
+      <!-- simple accessible label: will be visually hidden on expanded -->
+      <span class="visually-hidden">Open navigation</span>
+      <!-- A simple hamburger icon using spans -->
+      <span class="hamburger" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </span>
+    </button>
+
+    <!-- Hidden/slide-out menu -->
+    <ul id="sidebar-menu" class="sidebar-menu" role="menu" aria-hidden="true">
+      <li role="none"><a role="menuitem" href="#" class="menu-link">Home</a></li>
+      <!-- placeholders for future pages -->
+      <li role="none"><a role="menuitem" href="#" class="menu-link">Projects</a></li>
+      <li role="none"><a role="menuitem" href="#" class="menu-link">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main content -->
+  <main class="main" id="main">
+    <header class="hero">
+      <h1>Hi—I'm Your Name</h1>
+      <p class="tagline">Frontend & Shopify-style templating developer — building thoughtful e-commerce UI</p>
+
+      <p>
+        This is a starter portfolio built with plain HTML / CSS / JS and structured so I can
+        add Jekyll / Liquid, a project list, and live widgets later.
+      </p>
+    </header>
+
+    <section class="content">
+      <h2>Welcome</h2>
+      <p>
+        Use the left menu: hover over the slim bar on the left to expand it and see available pages.
+        This demo is intentionally simple so it’s easy to expand later.
+      </p>
+    </section>
+  </main>
+
+  <!-- Link to JS in assets/js/script.js -->
+  <script src="assets/js/script.js" defer></script>
+</body>
+</html>
