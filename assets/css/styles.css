@@ -4,8 +4,8 @@
   --card:#0f1724;
   --fg:#e6eef8;
   --muted:#9fb4c8;
-  --accent1:#00a8ff; /* twitter/youtube cool blue */
-  --accent2:#ff5a5f; /* subtle warm accent */
+  --accent1:#00a8ff; 
+  --accent2:#ff5a5f; 
   --glass: rgba(255,255,255,0.03);
   --glass-strong: rgba(255,255,255,0.05);
 }
@@ -37,3 +37,6 @@ h1#title{font-size:3rem;margin:0 0 .4rem;font-weight:700;letter-spacing:-0.02em}
   .card{padding:36px;border-radius:16px}
   h1#title{font-size:2.1rem}
 }
+
+#view-counter{position:fixed;right:20px;top:20px;background:var(--glass);padding:.35rem .6rem;border-radius:12px;font-weight:700;color:var(--fg);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,0.03);z-index:70;font-size:.9rem;display:inline-flex;align-items:center;gap:.5rem}
+#view-count{min-width:30px;text-align:right}
